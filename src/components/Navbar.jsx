@@ -1,9 +1,25 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "./Providers/AuthProvider";
 
 const Navbar = () => {
+
+    const {user, LogOut} = useContext(AuthContext)
+
+    const handleLogOut =()=>{
+        LogOut()
+        .then(()=> console.log('user logged in successfully'))
+        .catch(error=>console.error(error))
+    }
+
     const navLinks = <>
        <NavLink to={'/'}><li>Home</li></NavLink> 
-       <NavLink to={'/updateProfile'}> <li>Update Profile</li></NavLink>  
+       <NavLink to={'/updateProfile'}> <li>Update Profile</li></NavLink> 
+       {user &&
+              <> 
+               <NavLink to={"/userprofile"}> <li>User Profile</li></NavLink>
+           
+              </> } 
     </>
 
     return (
@@ -17,15 +33,23 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Doaa Real Estate</a>
+                <a className="btn btn-ghost font-bold text-2xl">Doaa Real Estate</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal flex gap-3 px-1 font-normal text-[18px]">
+                <ul className="menu menu-horizontal flex gap-10 px-1 font-semibold text-[18px]">
                     {navLinks}
                 </ul>
             </div>
             <div className="navbar-end">
-              <Link to={'/login'}> <a className="btn">Login</a></Link> 
+            {
+                user ? <>
+                <span> {user.email} </span>
+                <a onClick={handleLogOut} className="btn">Sign Out </a>
+                </>:
+                <Link to={'/login'}>
+                <button className="btn btn-sm">Login</button>
+                </Link>
+            } 
             </div>
         </div>
     );
