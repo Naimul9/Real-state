@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const {signInUser, signInWithGoogle } = useContext(AuthContext)
@@ -20,6 +21,7 @@ const Login = () => {
             navigate('/')
         })
         .catch(error=>console.error(error))
+        toast.error("Invalid email or password. Please try again.");
     }
     
     const handleGoogleSignIn=()=>{
@@ -59,7 +61,9 @@ const Login = () => {
         <p>New Here? Please <Link to={"/register"}> <button className="btn btn-link">Register</button>  </Link> </p>
         <p> <button onClick={handleGoogleSignIn}  className="btn btn-ghost">Google</button> </p>
       </div>
+      <ToastContainer></ToastContainer>
        </div>
+     
     );
 };
 

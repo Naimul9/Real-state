@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -15,14 +16,22 @@ const Register = () => {
         const name = e.target.name.value
         console.log(name, email, password)
 
-        createUser(email,password)
-        .then(result =>{
-            console.log(result.user)
+        const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        if (!passwordRegex.test(password)) {
+            toast.error("Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long.");
+            return;
+        }
+
+        createUser(email, password)
+        .then(result => {
+            console.log(result.user);
+            toast.success("Registration successful!");
         })
-        .catch(error=>{
-            console.log(error)
-        })
-    }
+        .catch(error => {
+            console.log(error);
+            toast.error("Registration failed. Please try again.");
+        });
+};
 
 
 
@@ -63,6 +72,7 @@ const Register = () => {
         </form>
         <p>Already have Account? Please <Link to={"/login"}> <button className="btn btn-link">Login</button>  </Link> </p>
       </div>
+      <ToastContainer/>
       </div>
     );
 };
