@@ -1,0 +1,113 @@
+[
+    {
+      "estate_title": "Luxury Villa with Ocean View",
+      "id": "1",
+      "segment_name": "Residential",
+      "description": "Spacious villa overlooking the ocean, perfect for a luxurious lifestyle. Featuring expansive living areas, elegant interiors, and a private swimming pool. Enjoy breathtaking sunset views from the terrace. Ideal for those seeking a serene coastal retreat.",
+      "price": "$2,500,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Malibu, California",
+      "facilities": ["living room", "swimming pool", "kitchen"]
+    },
+    {
+      "estate_title": "Cosy Apartment in the City Center",
+      "id": "2",
+      "segment_name": "Residential",
+      "description": "Modern apartment in the heart of downtown, convenient for urban living. This cozy space offers stylish design, ample natural light, and access to a fitness center. Perfect for professionals or couples looking for city living at its finest.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "1000 sq ft",
+      "location": "New York City, New York",
+      "facilities": ["living room", "gym", "security"]
+    },
+    {
+      "estate_title": "Serenity Cottage by the Lake",
+      "id": "3",
+      "segment_name": "Vacation Home",
+      "description": "Charming cottage nestled by a peaceful lake, ideal for a relaxing getaway. Featuring rustic charm, a cozy fireplace, and a spacious deck overlooking the water. Perfect for nature lovers seeking tranquility.",
+      "price": "$500,000",
+      "status": "sale",
+      "area": "1200 sq ft",
+      "location": "Lake Tahoe, Nevada",
+      "facilities": ["living room", "fireplace", "deck"]
+    },
+    {
+      "estate_title": "Luxury Penthouse with Skyline Views",
+      "id": "4",
+      "segment_name": "Residential",
+      "description": "Stunning penthouse offering panoramic views of the city skyline. This luxurious residence features a rooftop terrace, gourmet kitchen, and spacious living areas. Perfect for those who appreciate modern elegance and breathtaking vistas.",
+      "price": "$3,800,000",
+      "status": "sale",
+      "area": "3500 sq ft",
+      "location": "Los Angeles, California",
+      "facilities": ["living room", "rooftop terrace", "gourmet kitchen"]
+    },
+    {
+      "estate_title": "Coastal Retreat with Private Beach Access",
+      "id": "5",
+      "segment_name": "Vacation Home",
+      "description": "Secluded retreat with direct access to a pristine sandy beach. This coastal gem features a spacious living room, private beachfront, and a BBQ area for entertaining. Ideal for those craving sun, sand, and serenity.",
+      "price": "$1,800,000",
+      "status": "sale",
+      "area": "2800 sq ft",
+      "location": "Maui, Hawaii",
+      "facilities": ["living room", "private beach", "BBQ area"]
+    },
+    {
+      "estate_title": "Modern Loft in Historic Building",
+      "id": "6",
+      "segment_name": "Residential",
+      "description": "Industrial-style loft in a converted historic building, blending modernity with character. This chic space features an open layout, exposed brick walls, and access to a fitness center. Perfect for urban dwellers with a taste for the eclectic.",
+      "price": "$900,000",
+      "status": "sale",
+      "area": "1500 sq ft",
+      "location": "San Francisco, California",
+      "facilities": ["open layout", "exposed brick", "fitness center"]
+    },
+    {
+      "estate_title": "Mountain Chalet with Ski-In/Ski-Out Access",
+      "id": "7",
+      "segment_name": "Vacation Home",
+      "description": "Chic chalet offering direct access to ski slopes, perfect for winter sports enthusiasts. This mountain retreat features a cozy living room, hot tub, and ski storage. Ideal for those seeking adventure and relaxation in equal measure.",
+      "price": "$1,600,000",
+      "status": "sale",
+      "area": "2000 sq ft",
+      "location": "Aspen, Colorado",
+      "facilities": ["living room", "hot tub", "ski storage"]
+    },
+    {
+      "estate_title": "Elegant Townhouse in Historic District",
+      "id": "8",
+      "segment_name": "Residential",
+      "description": "Classic townhouse with refined interiors located in a prestigious historic district. This elegant home boasts a spacious living room, study, and charming garden. Perfect for discerning buyers seeking timeless sophistication.",
+      "price": "$2,200,000",
+      "status": "sale",
+      "area": "2800 sq ft",
+      "location": "Boston, Massachusetts",
+      "facilities": ["living room", "study", "garden"]
+    },
+    {
+      "estate_title": "Seaside Condo with Panoramic Ocean Views",
+      "id": "9",
+      "segment_name": "Residential",
+      "description": "Contemporary condo offering breathtaking ocean vistas from every room. This stylish residence features a spacious living room, balcony, and access to a fitness center. Perfect for beach lovers seeking luxury and convenience.",
+      "price": "$1,700,000",
+      "status": "sale",
+      "area": "1800 sq ft",
+      "location": "Miami Beach, Florida",
+      "facilities": ["living room", "balcony", "fitness center"]
+    },
+    {
+      "estate_title": "Rustic Cabin Retreat in the Woods",
+      "id": "10",
+      "segment_name": "Vacation Home",
+      "description": "Cozy cabin nestled among tall trees, providing a peaceful woodland escape. This rustic retreat features a comfortable living room, wood-burning stove, and picturesque forest views. Ideal for nature enthusiasts seeking tranquility.",
+      "price": "$600,000",
+      "status": "sale",
+      "area": "1000 sq ft",
+      "location": "Lake Placid, New York",
+      "facilities": ["living room", "wood-burning stove", "forest views"]
+    }
+  ]
+  
