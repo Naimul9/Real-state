@@ -14,11 +14,13 @@ import PropertyDetails from './components/PropertyDetails';
 import AuthProvider from './components/Providers/AuthProvider';
 import UserProfile from './components/UserProfile';
 import PrivateRoutes from './routes/PrivateRoutes';
+import Error from './components/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children:[
       {
         path:"/",
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path:"/updateProfile",
-        element: <UpdateProfile></UpdateProfile>
+        element: <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>
       },
       {
         path: "/login",
@@ -39,7 +41,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/propertyDetails/:id",
-        element:<PropertyDetails></PropertyDetails>,
+        element:<PrivateRoutes><PropertyDetails></PropertyDetails></PrivateRoutes>,
         loader : ()=> fetch('/data.json'),
       },
       {
