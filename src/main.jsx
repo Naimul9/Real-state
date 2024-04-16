@@ -10,6 +10,8 @@ import Home from './components/Home';
 import UpdateProfile from './components/UpdateProfile';
 import Login from './components/Login';
 import Register from './components/Register';
+import PropertyDetails from './components/PropertyDetails';
+import AuthProvider from './components/Providers/AuthProvider';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,11 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>
       },
+      {
+        path: "/propertyDetails/:id",
+        element:<PropertyDetails></PropertyDetails>,
+        loader : ()=> fetch('/data.json'),
+      },
     ]
 
   },
@@ -40,6 +47,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+     <AuthProvider>
+   <RouterProvider router={router} />
+   </AuthProvider>
   </React.StrictMode>,
 )

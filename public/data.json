@@ -2,112 +2,110 @@
     {
       "estate_title": "Luxury Villa with Ocean View",
       "id": "1",
-      "segment_name": "Residential",
-      "description": "Spacious villa overlooking the ocean, perfect for a luxurious lifestyle. Featuring expansive living areas, elegant interiors, and a private swimming pool. Enjoy breathtaking sunset views from the terrace. Ideal for those seeking a serene coastal retreat.",
+      "segment_name": "Single-family Home",
+      "description": "Spacious villa overlooking the ocean, perfect for a luxurious lifestyle.",
       "price": "$2,500,000",
       "status": "sale",
       "area": "5000 sq ft",
       "location": "Malibu, California",
-      "facilities": ["living room", "swimming pool", "kitchen"]
+      "facilities": ["living room", "swimming pool", "kitchen"],
+      "image": "https://i.ibb.co/Tcz5WVP/pexels-ben-mack-6775268-1.jpg"
     },
     {
       "estate_title": "Cosy Apartment in the City Center",
       "id": "2",
-      "segment_name": "Residential",
-      "description": "Modern apartment in the heart of downtown, convenient for urban living. This cozy space offers stylish design, ample natural light, and access to a fitness center. Perfect for professionals or couples looking for city living at its finest.",
+      "segment_name": "Apartment",
+      "description": "Modern apartment in the heart of downtown, convenient for urban living.",
       "price": "$1,200,000",
       "status": "sale",
       "area": "1000 sq ft",
       "location": "New York City, New York",
-      "facilities": ["living room", "gym", "security"]
+      "facilities": ["living room", "gym", "security"],
+      "image": " https://i.ibb.co/FzFLwZT/pexels-ksenia-chernaya-3952068.jpg  "
     },
     {
       "estate_title": "Serenity Cottage by the Lake",
       "id": "3",
-      "segment_name": "Vacation Home",
-      "description": "Charming cottage nestled by a peaceful lake, ideal for a relaxing getaway. Featuring rustic charm, a cozy fireplace, and a spacious deck overlooking the water. Perfect for nature lovers seeking tranquility.",
+      "segment_name": "Vacation Rental",
+      "description": "Charming cottage nestled by a peaceful lake, ideal for a relaxing getaway.",
       "price": "$500,000",
       "status": "sale",
       "area": "1200 sq ft",
       "location": "Lake Tahoe, Nevada",
-      "facilities": ["living room", "fireplace", "deck"]
+      "facilities": ["living room", "fireplace", "deck"],
+      "image": " https://i.ibb.co/84KWhX4/pexels-matt-barnard-6748976.jpg  "
     },
     {
-      "estate_title": "Luxury Penthouse with Skyline Views",
+      "estate_title": "Elegant Townhouse in Historic District",
       "id": "4",
-      "segment_name": "Residential",
-      "description": "Stunning penthouse offering panoramic views of the city skyline. This luxurious residence features a rooftop terrace, gourmet kitchen, and spacious living areas. Perfect for those who appreciate modern elegance and breathtaking vistas.",
+      "segment_name": "Townhouse",
+      "description": "Classic townhouse with refined interiors located in a prestigious historic district.",
       "price": "$3,800,000",
       "status": "sale",
       "area": "3500 sq ft",
-      "location": "Los Angeles, California",
-      "facilities": ["living room", "rooftop terrace", "gourmet kitchen"]
-    },
-    {
-      "estate_title": "Coastal Retreat with Private Beach Access",
-      "id": "5",
-      "segment_name": "Vacation Home",
-      "description": "Secluded retreat with direct access to a pristine sandy beach. This coastal gem features a spacious living room, private beachfront, and a BBQ area for entertaining. Ideal for those craving sun, sand, and serenity.",
-      "price": "$1,800,000",
-      "status": "sale",
-      "area": "2800 sq ft",
-      "location": "Maui, Hawaii",
-      "facilities": ["living room", "private beach", "BBQ area"]
+      "location": "Boston, Massachusetts",
+      "facilities": ["living room", "study", "garden"],
+      "image": " https://i.ibb.co/NKdzf6F/pexels-ryutaro-tsukata-5745818.jpg  "
     },
     {
       "estate_title": "Modern Loft in Historic Building",
-      "id": "6",
-      "segment_name": "Residential",
-      "description": "Industrial-style loft in a converted historic building, blending modernity with character. This chic space features an open layout, exposed brick walls, and access to a fitness center. Perfect for urban dwellers with a taste for the eclectic.",
+      "id": "5",
+      "segment_name": "Apartment",
+      "description": "Industrial-style loft in a converted historic building, blending modernity with character.",
       "price": "$900,000",
       "status": "sale",
       "area": "1500 sq ft",
       "location": "San Francisco, California",
-      "facilities": ["open layout", "exposed brick", "fitness center"]
+      "facilities": ["open layout", "exposed brick", "fitness center"],
+      "image": " https://i.ibb.co/rZJ3QCX/pexels-vlad-fonsark-4691284.jpg  "
     },
     {
       "estate_title": "Mountain Chalet with Ski-In/Ski-Out Access",
-      "id": "7",
-      "segment_name": "Vacation Home",
-      "description": "Chic chalet offering direct access to ski slopes, perfect for winter sports enthusiasts. This mountain retreat features a cozy living room, hot tub, and ski storage. Ideal for those seeking adventure and relaxation in equal measure.",
+      "id": "6",
+      "segment_name": "Vacation Rental",
+      "description": "Chic chalet offering direct access to ski slopes, perfect for winter sports enthusiasts.",
       "price": "$1,600,000",
       "status": "sale",
       "area": "2000 sq ft",
       "location": "Aspen, Colorado",
-      "facilities": ["living room", "hot tub", "ski storage"]
+      "facilities": ["living room", "hot tub", "ski storage"],
+      "image": " https://i.ibb.co/WW077Z1/pexels-prateek-katyal-2852350.jpg  "
     },
     {
-      "estate_title": "Elegant Townhouse in Historic District",
-      "id": "8",
-      "segment_name": "Residential",
-      "description": "Classic townhouse with refined interiors located in a prestigious historic district. This elegant home boasts a spacious living room, study, and charming garden. Perfect for discerning buyers seeking timeless sophistication.",
-      "price": "$2,200,000",
-      "status": "sale",
-      "area": "2800 sq ft",
-      "location": "Boston, Massachusetts",
-      "facilities": ["living room", "study", "garden"]
-    },
-    {
-      "estate_title": "Seaside Condo with Panoramic Ocean Views",
-      "id": "9",
-      "segment_name": "Residential",
-      "description": "Contemporary condo offering breathtaking ocean vistas from every room. This stylish residence features a spacious living room, balcony, and access to a fitness center. Perfect for beach lovers seeking luxury and convenience.",
-      "price": "$1,700,000",
+      "estate_title": "Senior Living Community with Resort Amenities",
+      "id": "7",
+      "segment_name": "Senior Living Community",
+      "description": "Retirement community offering resort-style amenities and care services.",
+      "price": "$700,000",
       "status": "sale",
       "area": "1800 sq ft",
-      "location": "Miami Beach, Florida",
-      "facilities": ["living room", "balcony", "fitness center"]
+      "location": "Scottsdale, Arizona",
+      "facilities": ["community center", "swimming pool", "healthcare services"],
+      "image": " https://i.ibb.co/tzc5RkG/pexels-vincent-rivaud-2347721-1.jpg  "
     },
     {
-      "estate_title": "Rustic Cabin Retreat in the Woods",
-      "id": "10",
-      "segment_name": "Vacation Home",
-      "description": "Cozy cabin nestled among tall trees, providing a peaceful woodland escape. This rustic retreat features a comfortable living room, wood-burning stove, and picturesque forest views. Ideal for nature enthusiasts seeking tranquility.",
-      "price": "$600,000",
+      "estate_title": "Student Housing near University Campus",
+      "id": "8",
+      "segment_name": "Student Housing",
+      "description": "Modern student apartments conveniently located near the university campus.",
+      "price": "$300,000",
       "status": "sale",
-      "area": "1000 sq ft",
-      "location": "Lake Placid, New York",
-      "facilities": ["living room", "wood-burning stove", "forest views"]
+      "area": "900 sq ft",
+      "location": "Austin, Texas",
+      "facilities": ["study room", "fitness center", "laundry facilities"],
+      "image": " https://i.ibb.co/ZGZVvD9/pexels-kampus-production-5940844.jpg  "
+    },
+    {
+      "estate_title": "Beachfront Bungalow for Vacation Retreats",
+      "id": "9",
+      "segment_name": "Vacation Rental",
+      "description": "Quaint bungalow steps away from the beach, perfect for vacation retreats.",
+      "price": "$750,000",
+      "status": "sale",
+      "area": "1400 sq ft",
+      "location": "Key West, Florida",
+      "facilities": ["ocean view deck", "BBQ area", "hammock"],
+      "image": "https://i.ibb.co/nP0KHkZ/pexels-thanhhoa-tran-1488327.jpg   "
     }
   ]
   
