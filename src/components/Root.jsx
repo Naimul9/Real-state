@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 const Root = () => {
     return (
-        <div className=" font-sans"> 
+        <div className=" font-poppins"> 
             <Navbar></Navbar> 
            <Outlet></Outlet>
            <Footer></Footer>

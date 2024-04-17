@@ -1,12 +1,14 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaEye, FaEyeSlash  } from "react-icons/fa";
 
 const Register = () => {
 
     const {createUser} = useContext(AuthContext)
+    const[showPassword, SetShowPassword] =useState(false)
 
 
     const handleRegister= e =>{
@@ -55,22 +57,40 @@ const Register = () => {
             <label className="label">
               <span className="label-text">Photo Url</span>
             </label>
-            <input type="text" name="image" required placeholder="Url" className="input input-bordered"  />
+            <input type="text" name="photo" required placeholder="Photo Url" className="input input-bordered"  />
           </div>
-          <div className="form-control">
+
+
+          <div className="form-control ">
+          
             <label className="label">
-              <span className="label-text">Password</span>
+            <span className="label-text">Password</span>
             </label>
-            <input type="password" name="password" required placeholder="password" className="input input-bordered"/>
-            <label className="label">
+           <div className="relative ">
+             <input
+            type={showPassword ? "text" : "password"} 
+            name="password"
+             required placeholder="password"
+              className="input input-bordered w-full"  />
+              
+               <span className="absolute mt-4 -ml-8" onClick={()=> SetShowPassword(!showPassword)}>
+                {
+                  showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                }
+            </span>
+           </div>
+           
+           
+          </div>
+          <label className="label">
               <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
             </label>
-          </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn btn-primary text-base">Register</button>
           </div>
+          <p>Already have Account? Please <Link to={"/login"}> <button className="btn btn-link text-base">Login</button>  </Link> </p>
         </form>
-        <p>Already have Account? Please <Link to={"/login"}> <button className="btn btn-link">Login</button>  </Link> </p>
+       
       </div>
       <ToastContainer/>
       </div>

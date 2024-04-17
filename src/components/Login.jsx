@@ -54,12 +54,14 @@ const Login = () => {
               <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
             </label>
           </div>
-          <div className="form-control mt-6">
-            <button className="btn btn-primary">Login</button>
+          <div className="form-control mt-2">
+            <button className="btn btn-primary text-base">Login</button>
           </div>
+          <p >New Here? Please <Link to={"/register"}> <button className="btn btn-link text-base">Register</button>  </Link> </p>
+          <p > <button onClick={handleGoogleSignIn}  className="btn btn-ghost bg-slate-200 mb-5">Google</button> </p>
         </form>
-        <p className="px-10">New Here? Please <Link to={"/register"}> <button className="btn btn-link">Register</button>  </Link> </p>
-        <p> <button onClick={handleGoogleSignIn}  className="btn btn-ghost">Google</button> </p>
+        
+       
       </div>
       <ToastContainer></ToastContainer>
        </div>
