@@ -4,6 +4,7 @@ import { AuthContext } from "./Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash  } from "react-icons/fa";
+import { Helmet} from 'react-helmet-async';
 
 const Register = () => {
 
@@ -39,6 +40,7 @@ const Register = () => {
 
     return (
       <div className="py-10">
+        <Helmet> <title> Register </title> </Helmet>
           <div className="mx-auto w-full  max-w-sm shadow-2xl bg-base-100">
         <form onSubmit={handleRegister}  className="card-body">
           <div className="form-control">

@@ -3,9 +3,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet} from 'react-helmet-async';
 
 const Login = () => {
-    const {signInUser, signInWithGoogle } = useContext(AuthContext)
+    const {signInUser, signInWithGoogle, signInWithGithub  } = useContext(AuthContext)
     const navigate = useNavigate()
     
     const handleLogin= e =>{
@@ -35,9 +36,21 @@ const Login = () => {
         })
     }
 
+    const handleGithubSignIn=()=>{
+        signInWithGithub()
+        .then(result => {
+            console.log(result.user)
+        })
+        .catch(error=> {
+            console.error(error)
+        })
+    }
+
+
 
     return (
        <div className="py-[100px]">
+        <Helmet> <title>Login</title> </Helmet>
          <div className="mx-auto w-full  max-w-sm shadow-2xl bg-base-100 ">
         <form onSubmit={handleLogin}  className="card-body">
           <div className="form-control">
@@ -58,8 +71,12 @@ const Login = () => {
           <div className="form-control mt-2">
             <button className="btn btn-primary text-base">Login</button>
           </div>
-          <p >New Here? Please <Link to={"/register"}> <button className="btn btn-link text-base">Register</button>  </Link> </p>
-          <p > <button onClick={handleGoogleSignIn}  className="btn btn-ghost bg-slate-200 mb-5">Google</button> </p>
+          <p >New Here? Please <Link to={"/register"}> <button className="btn btn-sm btn-link text-base">Register</button>  </Link> </p>
+         <div className="flex px-16">
+         <p > <button onClick={handleGoogleSignIn}  className="btn btn-ghost bg-slate-200 mb-5">Google</button> </p>
+
+<p > <button onClick={handleGithubSignIn}  className="btn btn-ghost bg-slate-200 mb-5">Github</button> </p>
+         </div>
         </form>
         
        

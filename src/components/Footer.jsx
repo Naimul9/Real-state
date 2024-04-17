@@ -1,10 +1,10 @@
 import { MdMapsHomeWork } from "react-icons/md";
 const Footer = () => {
     return (
-<footer className="mt-10 footer p-10  bg-slate-200 text-black w-[1600px] mx-auto">
+<footer className="mt-10 footer p-10  bg-slate-200 text-black  w-full  lg:w-[1600px] mx-auto">
 <aside>
 <p className="text-4xl">< MdMapsHomeWork /></p>
-    <p className="text-xl font-bold mt-3">ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+    <p className="text-xl font-bold mt-3">Doaa Builders Ltd.<br/>Providing reliable tech since 1992</p>
   </aside> 
   <nav>
     <h6 className="footer-title">Services</h6> 

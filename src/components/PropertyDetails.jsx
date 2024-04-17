@@ -9,7 +9,7 @@ const PropertyDetails = () => {
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl max-w-screen-2xl mx-auto my-10">
   <figure><img className="h-[600px] w-[800px]" src={property.image} alt="Album"/></figure>
-  <div className="card-body w-[400px]">
+  <div className="card-body lg:w-[400px] md:w-11/12 mx-auto">
     <h2 className="card-title "></h2>
     <div>
     <p className="text-3xl font-bold text-center text-slate-500">{property.estate_title}</p> 

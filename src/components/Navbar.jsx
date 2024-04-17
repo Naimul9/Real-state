@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import  { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
 
@@ -27,7 +27,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className="navbar bg-slate-200 max-w-screen-2xl mx-auto font-sans">
+        <div className="navbar bg-slate-200 w-full lg:max-w-screen-2xl mx-auto font-poppins">
             <div className="navbar-start rounded-2xl">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -53,12 +53,12 @@ const Navbar = () => {
                             className="btn btn-ghost btn-circle avatar"
                         >
                             <div className="w-10 rounded-full">
-                                <img alt="User Avatar" src={user.photoUrl} />
+                                <img alt="User Avatar" src={user.photoURl} />
                             </div>
                         </div>
                         {isHovering && (
                             <div className="absolute bg-white text-black text-sm py-1 px-2 rounded-md shadow top-10 right-0">
-                                name
+                            {user.displayName}
                             </div>
                         )}
                     </div>
