@@ -18,6 +18,7 @@ const Login = () => {
         .then(result =>{
             console.log(result.user)
             e.target.reset()
+            toast.success("Registration successful!");
             navigate('/')
         })
         .catch(error=>console.error(error))

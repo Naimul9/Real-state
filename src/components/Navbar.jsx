@@ -1,29 +1,33 @@
-import { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "./Providers/AuthProvider";
 
 const Navbar = () => {
+    const { user, LogOut } = useContext(AuthContext);
+    const [isHovering, setIsHovering] = useState(false);
 
-    const {user, LogOut} = useContext(AuthContext)
-
-    const handleLogOut =()=>{
+    const handleLogOut = () => {
         LogOut()
-        .then(()=> console.log('user logged in successfully'))
-        .catch(error=>console.error(error))
-    }
+            .then(() => console.log('User logged out successfully'))
+            .catch(error => console.error(error));
+    };
 
-    const navLinks = <>
-       <NavLink to={'/'}><li>Home</li></NavLink> 
-       <NavLink to={'/updateProfile'}> <li>Update Profile</li></NavLink> 
-       {user &&
-              <> 
-               <NavLink to={"/userprofile"}> <li>User Profile</li></NavLink>
-           
-              </> } 
-    </>
+    const toggleHover = () => {
+        setIsHovering(!isHovering);
+    };
+
+    const navLinks = (
+        <>
+            <NavLink to={'/'}><li>Home</li></NavLink>
+            <NavLink to={'/updateProfile'}><li>Update Profile</li></NavLink>
+            {user && (
+                <NavLink to={"/userprofile"}><li>User Profile</li></NavLink>
+            )}
+        </>
+    );
 
     return (
-        <div className="navbar   bg-slate-200 max-w-screen-2xl mx-auto font-sans">
+        <div className="navbar bg-slate-200 max-w-screen-2xl mx-auto font-sans">
             <div className="navbar-start rounded-2xl">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -41,19 +45,31 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-            {
-                user ? <>
-                 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img alt="Tailwind CSS Navbar component" src={user.photoUrl} />
-        </div>
-      </div>
-                <a onClick={handleLogOut} className="btn">Sign Out </a>
-                </>:
-                <Link to={'/login'}>
-                <button className="btn btn-sm">Login</button>
-                </Link>
-            } 
+                {user ? (
+                    <div className="relative group" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                        <div
+                            tabIndex={0}
+                            role="button"
+                            className="btn btn-ghost btn-circle avatar"
+                        >
+                            <div className="w-10 rounded-full">
+                                <img alt="User Avatar" src={user.photoUrl} />
+                            </div>
+                        </div>
+                        {isHovering && (
+                            <div className="absolute bg-white text-black text-sm py-1 px-2 rounded-md shadow top-10 right-0">
+                                name
+                            </div>
+                        )}
+                    </div>
+                ) : (
+                    <Link to={'/login'}>
+                        <button className="btn btn-sm">Login</button>
+                    </Link>
+                )}
+                {user && (
+                    <button onClick={handleLogOut} className="btn">Sign Out</button>
+                )}
             </div>
         </div>
     );
