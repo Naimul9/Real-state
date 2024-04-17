@@ -5,7 +5,7 @@ const SingleProperties = ({ item }) => {
     const { estate_title, id, segment_name, description, price, status, area, location, facilities, image } = item
     return (
         <div >
-            <section className="h-[600px] mx-auto lg:w-[450px] border rounded-xl mt-10 relative">
+            <section className="h-[600px] mx-auto lg:w-[430px] border rounded-xl mt-10 relative">
                 <div className="container p-6 mx-auto ">
 
                     <div>
