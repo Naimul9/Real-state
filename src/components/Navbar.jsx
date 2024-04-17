@@ -21,7 +21,7 @@ const Navbar = () => {
             <NavLink to={'/'}><li>Home</li></NavLink>
             <NavLink to={'/updateProfile'}><li>Update Profile</li></NavLink>
             {user && (
-                <NavLink to={"/userprofile"}><li>User Profile</li></NavLink>
+                <NavLink to={"/userprofile"}><li>About Us</li></NavLink>
             )}
         </>
     );
